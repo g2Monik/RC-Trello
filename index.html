@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RetoTrello</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+ <!-- header con botones no funcionales -->
+  <header>
+	  <div id="container">
+	  	<nav>
+		  	<h1><img class="imag2" src="assets/images/imag2.png" alt="imag2">Tableros</h1>
+		  	<ul id="login">
+				<li>
+				  <img class="more" src="assets/images/more.png" alt="more">
+				</li>
+				<li>
+					<img class="profile" src="assets/images/profile.png" alt="proile">
+				</li>
+				<li>
+				  <img class="info" src="assets/images/info.png" alt="info">
+				</li>
+				<li>
+				  <img class="bell" src="assets/images/bell.png" alt="bell">
+				</li>
+				<li>
+				  <img class="imag1" src="assets/images/imag1.png" alt="imag1">
+				</li>
+				<li>
+				  <input class="search" type="text" name="search" placeholder="" id="nav-search">
+				</li>
+			</ul>
+		  </nav>
+    </div>
+  </header>
+  <!-- div para el nombre del tablero y el menu -->
+  <div class="fav">
+		<h2>Tablero - Reto de Codigo</h2>
+		<ul id="menu">
+		  <li>- Mostrar menu</li>
+			<li class="private">Privado</li>
+		  <li>
+			<img class="imag3" src="assets/images/starw.png" alt="imag2">
+		  </li>
+		</ul>
+  </div>
+
+		<!-- Espacio para tableros -->
+	<section id="boards">
+			<!-- Al hacer click este div cambiara -->
+			<div id="addList"><span onclick="change()">Añadir una tarjeta....</span></div>
+			<!-- formulario-->
+			<form id="mainBoard" class="invisible">
+				<input type="text" placeholder="Añadir una tarjeta..." id="items">
+				<!-- Boton Añadir-->
+				<button type="submit" id="add" class="button">Añadir</button>
+			</form>
+	</section>
+
+	<script src="js/app.js"></script>
+
+</body>
+</html>
