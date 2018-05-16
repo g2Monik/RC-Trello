@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>RetoTrello</title>
+	<title>Reto Trello</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -49,12 +49,13 @@
 		<!-- Espacio para tableros -->
 	<section id="boards">
 			<!-- Al hacer click este div cambiara -->
-			<div id="addList"><span onclick="change()">Añadir una tarjeta....</span></div>
+			<div id="addList"><span onclick="change()">Añadir una lista....</span></div>
 			<!-- formulario-->
 			<form id="mainBoard" class="invisible">
-				<input type="text" placeholder="Añadir una tarjeta..." id="items">
-				<!-- Boton Añadir-->
-				<button type="submit" id="add" class="button">Añadir</button>
+				<input type="text" placeholder="Añadir una lista..." id="titleList">
+				<!-- Boton Añadir y boton borrar-->
+				<button type="submit" id="add" class="button">Guardar</button>
+				<button type="button" id="close" class="closing-button"><span class="icon-close">X</span></button>
 			</form>
 	</section>
 

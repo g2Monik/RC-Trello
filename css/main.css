@@ -1,5 +1,5 @@
 body {
-	background-color: #CEE3F6;
+	background-color: #B0C4DE;
 }
 
 .imag1{
@@ -38,7 +38,7 @@ nav{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color:#5D9FCA;
+	background-color:#6495ED;
 	line-height: 25px;
 }
 
@@ -64,6 +64,60 @@ ul#login , ul#menu{
 	padding-top: 50px;
 }
 
+#addList {
+	width: 15vw;
+	height: 5vh;
+	background-color:#6495ED;
+	border-radius: 5px;
+}
+
+#addList:hover {
+	background-color: #BDBDBD;
+}
+
+#mainBoard {
+	width: 16vw;
+	height: 10vh;
+	background-color:#BDBDBD;
+	text-align: center;
+	border-radius: 5px;
+
+}
+
+#mainBoard input {
+	width: 15.5vw;
+	height: 5vh;
+	border-radius: 5px;
+}
+
 .invisible {
 	display: none;
+}
+
+.visible {
+	display: inline-block;
+}
+
+#add {
+	margin-top:3px;
+	background-color: #A9D0F5;
+}
+.newBoard {
+	width: 15vw;
+	background-color: #BDBDBD;
+	text-align: center;
+}
+
+.newBoard h3 {
+	text-align: left;
+}
+
+.newBoard input{
+	border-style: none;
+	background-color: #BDBDBD;
+	text-decoration: overline;
+}
+
+.newBoard input:hover::placeholder {
+	text-decoration: underline;
 }
