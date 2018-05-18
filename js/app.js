@@ -9,7 +9,6 @@ var items = document.getElementById("files");
 // Funciones para convertir a formulario
 function change() {
 	addList.addEventListener("click", formAppears);
-}
 
 function formAppears() {
     addList.classList.add("invisible");
@@ -18,7 +17,6 @@ function formAppears() {
     addList.classList.remove("visible");
     buttonAdd.addEventListener("click", NewList);
     buttonClose.addEventListener("click", close);
-};
 //boton X
 function close() {
     mainBoard.classList.remove("visible");
@@ -47,8 +45,6 @@ function NewList() {
 				newInput.innerHTML = "Añadir una tarjeta.";
         newInput.setAttribute("id", "newButton");
 				newInput.addEventListener("click", createItem);
-    }
-};
 
 //creamos en nuevo textarea para las tarjetas
 function createItem() {
@@ -56,13 +52,30 @@ function createItem() {
     document.getElementById("newButton").classList.add("invisible");
 
     var board = document.getElementsByClassName("newBoard")[0];
-    var textArea = document.createElement("textarea");
-    board.appendChild(textArea);
-
+    var textarea = document.createElement("textarea");
+		textarea.setAttribute("id", "textarea");
+		textarea.setAttribute("placeholder", "Añadir tarjeta");
+    board.appendChild(textarea);
     // boton para tarjetas
     var textAddButton = document.createTextNode("Añadir");
     var newButto = document.createElement("button");
+		newButto.setAttribute("id", "newButto");
     newButto.appendChild(textAddButton);
     board.appendChild(newButto);
-    newButto.classList.add("newButton");
-};
+    newButto.classList.add("newButto");
+
+    newButto.addEventListener('click', function(event) {
+			event.preventDefault();
+    var card = document.createElement('p');
+    card.textContent = textarea.value;
+    card.className = 'card';
+    board.removeChild(textarea);
+    board.appendChild(card);
+    board.appendChild(textarea);
+    board.appendChild(newButto);
+     });
+	  };
+   }
+  };
+ };
+}
